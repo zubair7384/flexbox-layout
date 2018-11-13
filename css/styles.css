@@ -1,0 +1,121 @@
+body {
+    padding: 0;
+    margin:0; 
+  }
+
+.header >ul{
+   display: flex;
+   justify-content: center;
+   margin: .7rem;
+   
+   list-style-type: none;
+}
+
+.header >ul >li >a{
+   text-decoration: none;
+   letter-spacing: 1.5px;
+   color: #fff;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   padding: 12px 18px;
+   transition: .7s;
+   text-align: center;
+}
+
+.header >ul >li >a:hover{
+   background: rgba(255, 255, 255, 0.192);
+ }
+
+  .header {
+    display:flex;
+    justify-content: flex-end;
+    width: 100%;
+    flex-basis: 40;
+    background: rgb(235, 84, 57);
+    
+  }
+  
+  .main-content{
+    display: flex;
+  }
+
+  .main-content .main {
+    
+    margin: 0;
+    text-align: left;
+    height: 100vh;
+    background: rgb(3, 171, 228);
+  }
+
+  .main-content .main >P{
+    color: #fff;
+    margin: 0;
+    padding: 3rem 2rem;
+    line-height: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .aside-1 {
+    color: #fff;
+    flex:1; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 2rem 0 0 0;
+    text-align: center;
+    background: rgb(230, 196, 3);
+  }
+  
+  .aside-2 {
+    color: #fff;
+    flex:1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 2rem 0 0 0;
+    text-align: center;
+    background: rgb(235, 89, 162);
+  }
+
+  .footer{
+    color: #fff;
+    text-align: center;
+    height: 5vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    background: rgb(89, 214, 89);
+    padding-top: 1rem;
+  }
+  
+@media screen and (max-width: 806px){
+
+  .header >ul{
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  .header >ul >li{
+    padding: 1rem 0;
+  }
+
+  .main-content{
+    flex-direction: column;
+  }
+  .aside-1{
+    height: 20vh;
+    text-align: center;
+  }
+
+  .aside-2{
+    height: 20vh;
+    text-align:center;
+  }
+  
+}
+  
+  @media all and (min-width: 800px) {
+    .main    { flex: 3 0px; }
+    .aside-1 { order: 1; } 
+    .main    { order: 2; }
+    .aside-2 { order: 3; }
+    .footer  { order: 4; }
+  }
+  
+ 
